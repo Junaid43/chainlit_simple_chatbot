@@ -1,0 +1,23 @@
+[project]
+name = "openai-agent-sdk-class-01"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Junaid Tariq", email = "muhammad.junaid434@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "chainlit>=2.4.1",
+    "openai-agents>=0.0.4",
+]
+
+[project.scripts]
+opg = "openai_agent_sdk_class_01:main"
+chatbot = "openai_agent_sdk_class_01.chatbot:run_chainlit"
+chatbot_chainlit = "openai_agent_sdk_class_01.main:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
